@@ -60,14 +60,14 @@
 ;; ;; Use markdown mode
 ;; (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-;; ;; Sass mode config
-;; (add-hook 'sass-mode-hook
-;;           (function (lambda ()
-;;             (local-set-key [backspace] 'delete-backward-char)
-;; 	    (ga-tab-fix)
-;; 	    (setq tab-width 2)
-;; 	    (setq indent-tabs-mode nil)
-;;             )))
+;; Sass mode config
+(add-hook 'sass-mode-hook
+          (function (lambda ()
+            (local-set-key [backspace] 'delete-backward-char)
+	    (ga-tab-fix)
+	    (setq tab-width 2)
+	    (setq indent-tabs-mode nil)
+            )))
 
 ;; Run the emacs in-process server to accept remote-edit requests
 (server-start)

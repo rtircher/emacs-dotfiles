@@ -7,7 +7,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-js starter-kit-eshell color-theme-solarized)
+(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-js starter-kit-eshell color-theme-solarized sass-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
