@@ -3,6 +3,11 @@
 ;;;###autoload
 (progn
 
+  (global-set-key [up] nil)
+  (global-set-key [down] nil)
+  (global-set-key [left] nil)
+  (global-set-key [right] nil)
+
   ;; Adding vim style o and O functions
   (global-set-key "\M-o" 'rtr-create-line-below)
   (global-set-key "\M-O" 'rtr-create-line-above)

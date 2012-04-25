@@ -1,5 +1,13 @@
 ;;; rtircher-defuns.el --- Define some custom functions
 
+(defun activate-arrows (&optional args)
+  "Activate/disactivate the arrow for text navigation"
+  (interactive)
+  (global-set-key [up] 'previous-line)
+  (global-set-key [down] 'next-line)
+  (global-set-key [left] 'left-char)
+  (global-set-key [right] 'right-char))
+
 (defun save-buffer-if-visiting-file (&optional args)
   "Save the current buffer only if it is visiting a file"
   (interactive)
