@@ -7,7 +7,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-js starter-kit-eshell color-theme-solarized sass-mode coffee-mode js2-mode)
+(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-js starter-kit-eshell color-theme color-theme-solarized sass-mode coffee-mode js2-mode textmate)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -27,9 +27,11 @@
 (delete-selection-mode t) ;; Plus it ake emacs to replace the current selection when yanking
 (setq shift-select-mode t)
 
+(require 'textmate)
 
 ;; Load up customizations
 (require 'rtircher-vars)
 (require 'rtircher-defuns)
 (require 'rtircher-bindings)
 (require 'rtircher-misc)
+(require 'rtircher-coffee)

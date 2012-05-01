@@ -3,10 +3,10 @@
 ;;;###autoload
 (progn
 
-  (global-set-key [up] nil)
-  (global-set-key [down] nil)
-  (global-set-key [left] nil)
-  (global-set-key [right] nil)
+  (global-set-key [up] 'ignore)
+  (global-set-key [down] 'ignore)
+  (global-set-key [left] 'ignore)
+  (global-set-key [right] 'ignore)
 
   ;; Adding vim style o and O functions
   (global-set-key "\M-o" 'rtr-create-line-below)
@@ -19,9 +19,6 @@
   (global-set-key "\C-x\M-k" 'duplicate-line)
   (global-set-key "\C-xj" 'ga/kill-entire-current-line)
   (global-set-key [delete] 'delete-char)
-
-  ;; Flyspell
-  (global-set-key "\M-S" 'ispell-buffer)
 
   ;; Changing kill emacs
   (global-set-key "\C-x\C-c" 'ignore)
@@ -43,6 +40,8 @@
   ;; Font size
   (define-key global-map (kbd "C-=") 'text-scale-increase)
   (define-key global-map (kbd "C--") 'text-scale-decrease)
+
+  (define-key global-map (kbd "s-t") 'textmate-goto-file)
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;; Taken from starterkit bindings                                 ;;
