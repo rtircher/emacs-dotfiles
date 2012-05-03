@@ -7,7 +7,19 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-js starter-kit-eshell color-theme color-theme-solarized sass-mode coffee-mode js2-mode textmate markdown-mode)
+(defvar my-packages '(starter-kit
+                      starter-kit-lisp
+                      starter-kit-js
+                      starter-kit-eshell
+                      color-theme
+                      color-theme-solarized
+                      sass-mode
+                      coffee-mode
+                      js2-mode
+                      textmate
+                      markdown-mode
+                      clojure-mode
+                      clojurescript-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
