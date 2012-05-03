@@ -58,7 +58,7 @@
 (setq ispell-program-name "/usr/local/bin/aspell")
 
 ;; ;; Use markdown mode
-;; (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 ;; Sass mode config
 (add-hook 'sass-mode-hook
