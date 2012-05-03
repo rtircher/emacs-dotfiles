@@ -24,8 +24,8 @@
   (global-set-key "\C-x\C-c" 'ignore)
   (global-set-key "\C-x\C-q" 'kill-emacs)
 
-  ;; Jump to a definition in the current file. (This is awesome.)
-  (global-set-key (kbd "C-x C-i") 'ido-imenu)
+  ;; Jump to a definition in the current file and set mark before jumping
+  (global-set-key (kbd "C-x C-i") 'rtr-ido-imenu-and-mark)
 
   (global-set-key "\C-x\C-b" 'bs-show)
 
@@ -42,9 +42,6 @@
   (define-key global-map (kbd "C--") 'text-scale-decrease)
 
   (define-key global-map (kbd "s-t") 'textmate-goto-file)
-
-  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  ;; Taken from starterkit bindings                                 ;;
 
   ;; It's all about the project.
   (global-set-key (kbd "C-c f") 'find-file-in-project)
@@ -65,9 +62,6 @@
   (global-set-key (kbd "C-M-s") 'isearch-forward)
   (global-set-key (kbd "C-M-r") 'isearch-backward)
   (global-set-key (kbd "C-M-%") 'query-replace)
-
-  ;; Jump to a definition in the current file. (Protip: this is awesome.)
-  (global-set-key (kbd "C-x C-i") 'imenu)
 
   ;; File finding
   (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window)

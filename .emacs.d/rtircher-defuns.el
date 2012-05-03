@@ -34,6 +34,18 @@
   (newline)
   (forward-line -1))
 
+;; setting mark before calling imenu
+(defvar push-mark-before-goto-char nil)
+
+(defadvice goto-char (before push-mark-first activate)
+  (when push-mark-before-goto-char
+    (push-mark)))
+
+(defun rtr-ido-imenu-and-mark ()
+  (interactive)
+  (let ((push-mark-before-goto-char t))
+    (ido-imenu)))
+
 ;; Improved searching:
 (defun ga/isearch-yank-current-word ()
   "Pull current word from buffer into search string."

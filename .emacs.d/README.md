@@ -31,6 +31,8 @@ C-u C-<space>: Invoke mark ring
 C-x j: kills entire line
 C-k: kills end of line from point
 
+C-x C-i: Jump to a symbol and set a mark, depending on major mode.
+
 ### Rectangle mode
 Select text in normal fashion.  The rectangle formed by the point at the begining of selection and the one at the end of the selection indicates the rectangle that is going to be used.
 C-x r t -> rectangle replace
