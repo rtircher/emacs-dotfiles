@@ -36,6 +36,7 @@
 (set-face-background 'show-paren-match-face (face-background 'default))
 (set-face-foreground 'show-paren-match-face "cyan")
 
+(blink-cursor-mode 1)
 (line-number-mode 1)
 (column-number-mode 1)
 
