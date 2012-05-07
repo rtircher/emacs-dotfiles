@@ -33,6 +33,7 @@ d: flag this files for deletion
 x: execute file deletion
 u: removes deletion flag
 s: toggles between alphabetical order and date/time order
+o: opens file in other window
 
 ### Mark
 C-<space>: set region start (end is the point)
