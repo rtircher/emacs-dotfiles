@@ -17,6 +17,23 @@ C-h f: shows function help
 C-h v: shows value of an emacs config variable
 C-h m: shows all the key bindgins active in the buffer
 
+### Dired
+
+C-x d: shows dired mode
+
+In dired mode:
+i: inserts a subdirectory in the current buffer
+$: hides the current subdirectory
+M-$: hides all sudirectories
+M-r: updates the entire dired buffer
+1: updates the current file at point
+^: goes up to the parent directory
+R: renames a files
+d: flag this files for deletion
+x: execute file deletion
+u: removes deletion flag
+s: toggles between alphabetical order and date/time order
+
 ### Mark
 C-<space>: set region start (end is the point)
 C-g: cancel region
