@@ -14,8 +14,6 @@
 		    :family "inconsolata"
 		    :height 140)
 
-(setenv "PATH" (concat "/usr/local/bin" path-separator (getenv "PATH")))
-
 ;; Set default emacs frame size
 ;; (add-to-list 'default-frame-alist '(height . 70))
 ;; (add-to-list 'default-frame-alist '(width . 200))
@@ -26,7 +24,9 @@
 ;; (setq mac-option-modifier nil)
 
 ;; Make current path available to emacs
-(setenv "PATH" (shell-command-to-string "echo $PATH"))
+(setq path (shell-command-to-string "echo $PATH"))
+(setenv "PATH" path)
+(push path exec-path)
 
 ;; Split window at startup
 (split-window-horizontally)
