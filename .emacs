@@ -15,11 +15,14 @@
                       color-theme-solarized
                       sass-mode
                       coffee-mode
-                      js2-mode
                       textmate
                       markdown-mode
                       clojure-mode
-                      clojurescript-mode)
+                      clojure-test-mode
+                      clojure-project-mode
+                      cljdoc
+                      clojurescript-mode
+                      )
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)

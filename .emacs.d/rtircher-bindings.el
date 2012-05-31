@@ -3,10 +3,10 @@
 ;;;###autoload
 (progn
 
-  (global-set-key [up] 'ignore)
-  (global-set-key [down] 'ignore)
-  (global-set-key [left] 'ignore)
-  (global-set-key [right] 'ignore)
+  ;; (global-set-key [up] 'ignore)
+  ;; (global-set-key [down] 'ignore)
+  ;; (global-set-key [left] 'ignore)
+  ;; (global-set-key [right] 'ignore)
 
   ;; Adding vim style o and O functions
   (global-set-key "\M-o" 'rtr-create-line-below)

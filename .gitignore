@@ -32,3 +32,4 @@ retry.txt
 .emacs.d/elpa/
 .emacs.d/.smex-items
 .emacs.d/places
+.emacs.d/swank

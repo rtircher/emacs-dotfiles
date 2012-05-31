@@ -61,6 +61,9 @@
 ;; ;; Use markdown mode
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; Use ruby mode for Rakefiles
+(add-to-list 'auto-mode-alist '("[Rr]akefile\\'" . ruby-mode))
+
 ;; Sass mode config
 (add-hook 'sass-mode-hook
           (function (lambda ()
