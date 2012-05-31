@@ -1,6 +1,5 @@
 # My emacs tricks
 C-x C-i: shows the functions defined in buffer
---> doesn't work for now
 
 C-x +: Set windows to be of equal size
 
@@ -58,7 +57,7 @@ C-x r y -> rectangle paste
 C-x r k -> rectangle kill
 
 ### Auto indent
-M-\
+M-C-\
 --> doesn't work for now
 
 C-x m: starts eshell
@@ -71,15 +70,6 @@ M-x <the function mode name>
 M-x eval-buffer
 
 Good way to tryout new config is to use the \*scratch\* buffer and M-x eval-buffer
-
-## cua-mode
-Mx- cua-mode: starts cua mode
-C-x <enter>: start rectangle text selection
-<enter>: stops rectangle text selection
-<type stuff before or after rectangle for multiple line edit>
-M-n: allows adding number increments on those multiple lines based on where the point is set
-C-w: kills entire block
-Mx- cua-mode: starts cua mode
 
 ## Ruby mode
 ### Within a ruby buffer these are the specific key bindings
@@ -97,6 +87,20 @@ C-x v = does diff against head
 c-u C-x v = does diff against any revision
 C-x v u Discard any changes since last check-in
 C-x v ~ Checkout any revision of the current file
+
+## SLIME
+M-.: Jump to the definition of a var
+M-TAB or C-c TAB: Autocomplete symbol at point
+C-x C-e: Eval the form under the point
+C-c C-k: Compile the current buffer
+C-c C-l: Load current buffer and force required namespaces to reload
+C-M-x: Compile the whole top-level form under the point.
+C-c S-i: Inspect a value
+C-c C-m: Macroexpand the call under the point
+C-c C-d C-d: Look up documentation for a var
+C-c C-z: Switch from a Clojure buffer to the repl buffer
+C-c M-p: Switch the repl namespace to match the current buffer
+C-c C-w c: List all callers of a given function
 
 
 ## Magit
