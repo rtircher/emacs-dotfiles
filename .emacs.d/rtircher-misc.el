@@ -1,11 +1,13 @@
 ;;; rtircher-misc.el --- Things that don't fit anywhere else
 
-;; Set up my preferred color theme
-(color-theme-solarized-dark)
+;; If emacs is started from the terminal then we use the default theme
+(if (not (null window-system))
+    ;; Set up my preferred color theme
+    (color-theme-solarized-dark)
 
-;; Updating the color of the selected region because the default color is difficult to differentiate from the background for me
-(custom-set-faces
-  '(region ((t (:background "#14323C")))))
+  ;; Updating the color of the selected region because the default color is difficult to differentiate from the background for me
+  (custom-set-faces
+   '(region ((t (:background "#14323C"))))))
 
 ;; Adjustments to the font lock coloring. Made manually rather than
 ;; with custom as it provides more reliable control.
@@ -29,7 +31,7 @@
 (push path exec-path)
 
 ;; Split window at startup
-(split-window-horizontally)
+;; (split-window-horizontally)
 
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
