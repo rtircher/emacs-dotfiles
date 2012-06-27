@@ -22,6 +22,8 @@
                       clojure-project-mode
                       cljdoc
                       clojurescript-mode
+                      python-mode
+                      puppet-mode
                       )
   "A list of packages to ensure are installed at launch.")
 
