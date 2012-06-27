@@ -45,7 +45,7 @@ C-u C-<space>: Invoke mark ring
 - navigate to wherever you want
 - use mark ring to come back at last the set mark
 
-C-x j: kills entire line
+C-S-backspace: kills entire line
 C-k: kills end of line from point
 
 C-x C-i: Jump to a symbol and set a mark, depending on major mode.
