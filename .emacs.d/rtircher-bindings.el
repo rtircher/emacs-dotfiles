@@ -17,8 +17,13 @@
   ;; Text manipulation
   (global-set-key "\C-z" 'undo)
   (global-set-key "\C-x\M-k" 'duplicate-line)
-  (global-set-key "\C-xj" 'ga/kill-entire-current-line)
   (global-set-key [delete] 'delete-char)
+  (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
+
+  (global-set-key "\C-x\C-z" 'ignore)
+
+  (global-set-key "\M-]" 'indent-rigidly)
+  (global-set-key "\M-[" '(indent-rigidly nil nil -1))
 
   ;; Changing kill emacs
   (global-set-key "\C-x\C-c" 'ignore)
@@ -41,7 +46,7 @@
   (define-key global-map (kbd "C-=") 'text-scale-increase)
   (define-key global-map (kbd "C--") 'text-scale-decrease)
 
-  (define-key global-map (kbd "s-t") 'textmate-goto-file)
+  (define-key global-map (kbd "M-t") 'textmate-goto-file)
 
   ;; It's all about the project.
   (global-set-key (kbd "C-c f") 'find-file-in-project)
