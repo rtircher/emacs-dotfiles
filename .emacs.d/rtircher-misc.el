@@ -80,8 +80,8 @@
 
 ;; Hippie expand config
 (setq hippie-expand-try-functions-list
-      '(try-expand-list
-        try-expand-list-all-buffers
+      '(;try-expand-list
+        ;try-expand-list-all-buffers
         try-expand-all-abbrevs
         try-expand-dabbrev
         try-expand-dabbrev-all-buffers
