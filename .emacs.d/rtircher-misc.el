@@ -14,7 +14,7 @@
 (set-face-attribute 'default
 		    t
 		    :family "inconsolata"
-		    :height 140)
+		    :height 160)
 
 ;; Set default emacs frame size
 ;; (add-to-list 'default-frame-alist '(height . 70))
