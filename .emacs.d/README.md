@@ -88,7 +88,7 @@ c-u C-x v = does diff against any revision
 C-x v u Discard any changes since last check-in
 C-x v ~ Checkout any revision of the current file
 
-## SLIME
+# SLIME/REPL
 M-.: Jump to the definition of a var
 M-TAB or C-c TAB: Autocomplete symbol at point
 C-x C-e: Eval the form under the point
@@ -101,6 +101,13 @@ C-c C-d C-d: Look up documentation for a var
 C-c C-z: Switch from a Clojure buffer to the repl buffer
 C-c M-p: Switch the repl namespace to match the current buffer
 C-c C-w c: List all callers of a given function
+C-c C-c: interrupt current process
+
+C-down or M-p: get previous input
+C-up or M-n: get next input
+M-r: backward input search
+M-s: forward input search
+C-c C-u: kill current input
 
 
 ## Magit
