@@ -24,6 +24,8 @@
                       clojurescript-mode
                       python-mode
                       puppet-mode
+                      rspec-mode
+                      ruby-block
                       )
   "A list of packages to ensure are installed at launch.")
 
