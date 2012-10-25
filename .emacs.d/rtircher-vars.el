@@ -4,7 +4,8 @@
  linum-offset            t
  tab-width               2
  indent-tabs-mode        nil
- visible-bell            t
+ visible-bell            nil
+ ring-bell-function 'ignore
  ;; Block emacs to automatically copy the region when selecting text
  mouse-drag-copy-region  nil
  default-major-mode      'text-mode
