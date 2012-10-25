@@ -25,6 +25,9 @@
   (global-set-key "\M-]" 'indent-rigidly)
   (global-set-key "\M-[" '(indent-rigidly nil nil -1))
 
+  (global-set-key [\M-\S-up] 'move-text-up)
+  (global-set-key [\M-\S-down] 'move-text-down)
+
   ;; Changing kill emacs
   (global-set-key "\C-x\C-c" 'ignore)
   (global-set-key "\C-x\C-q" 'kill-emacs)
