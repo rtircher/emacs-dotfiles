@@ -22,8 +22,9 @@
 
   (global-set-key "\C-x\C-z" 'ignore)
 
-  (global-set-key "\M-]" 'indent-rigidly)
-  (global-set-key "\M-[" '(indent-rigidly nil nil -1))
+  (global-set-key "\M-]" 'rtr-indent)
+  (global-set-key "\M-[" 'rtr-unindent)
+
 
   (global-set-key [\M-\S-up] 'move-text-up)
   (global-set-key [\M-\S-down] 'move-text-down)

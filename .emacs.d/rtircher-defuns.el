@@ -177,5 +177,26 @@ Symbols matching the text at point are put first in the completion list."
   (move-text-internal (- arg)))
 
 
+(defun shift-text (distance)
+  (if (use-region-p)
+      (let ((mark (mark)))
+        (save-excursion
+          (indent-rigidly (region-beginning)
+                          (region-end)
+                          distance)
+          (push-mark mark t t)
+          (setq deactivate-mark nil)))
+    (indent-rigidly (line-beginning-position)
+                    (line-end-position)
+                    distance)))
+
+(defun rtr-indent (count)
+  (interactive "p")
+  (shift-text count))
+
+(defun rtr-unindent (count)
+  (interactive "p")
+  (shift-text (- count)))
+
 (provide 'rtircher-defuns)
 ;;; rtircher-defuns.el ends here
