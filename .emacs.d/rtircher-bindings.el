@@ -1,5 +1,11 @@
 ;;; rtircher-bindings.el --- Set up some handy key bindings
 
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
+(setq mac-right-option-modifier 'control)
+
 ;;;###autoload
 (progn
 
