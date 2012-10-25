@@ -33,3 +33,4 @@ retry.txt
 .emacs.d/.smex-items
 .emacs.d/places
 .emacs.d/swank
+.emacs.d/tramp
