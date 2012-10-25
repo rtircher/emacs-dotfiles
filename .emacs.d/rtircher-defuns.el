@@ -57,14 +57,6 @@
        (skip-syntax-forward "w_")
        (point)))))
 
-;; Improved killing:
-(defun ga/kill-entire-current-line ()
-  "Kills the entire current line."
-  (interactive)
-  (save-excursion
-    (move-beginning-of-line nil)
-    (kill-line 1)))
-
 ;; Make the TAB key indent if at the beginning of a line, or perform an expansion
 ;; everywhere else
 (defun indent-or-expand (arg)
