@@ -1,8 +1,13 @@
+(setq-default
+ indent-tabs-mode nil
+ tab-width 2)
+
 (setq
  make-backup-files       nil
  inhibit-startup-message t
  linum-offset            t
  tab-width               2
+ standard-indent         2
  indent-tabs-mode        nil
  visible-bell            nil
  ring-bell-function 'ignore
