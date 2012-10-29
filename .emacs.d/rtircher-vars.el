@@ -8,7 +8,7 @@
  ;; Block emacs to automatically copy the region when selecting text
  mouse-drag-copy-region  nil
  default-major-mode      'text-mode
-)
+ )
 
 (put 'scroll-left 'disabled nil)
 
