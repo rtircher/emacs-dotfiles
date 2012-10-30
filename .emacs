@@ -1,18 +1,19 @@
 (require 'package)
+;; (add-to-list 'package-archives
+;;              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 (package-initialize)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(byte-recompile-directory "~/.emacs.d/vendor/" 0)
 
+(byte-recompile-directory "~/.emacs.d/vendor/haml-mode" 0)
 (add-to-list 'load-path "~/.emacs.d/vendor/haml-mode")
 (require 'haml-mode)
+(byte-recompile-directory "~/.emacs.d/vendor/haml-mode" 0)
 (add-to-list 'load-path "~/.emacs.d/vendor/sass-mode")
 (require 'sass-mode)
 
