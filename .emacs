@@ -42,8 +42,8 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
-
-(add-to-list 'load-path "~/.emacs.d")
+(byte-recompile-directory "~/.emacs.d/customs" 0)
+(add-to-list 'load-path "~/.emacs.d/customs")
 
 ;; Turn on line numbers for every file visiteed
 ;; (setq linum-format "%d")
@@ -52,7 +52,7 @@
 ;; Overidding some startkit stuffs
 (remove-hook 'prog-mode-hook 'esk-turn-on-hl-line-mode)
 (menu-bar-mode t)
-(delete-selection-mode t) ;; Plus it ake emacs to replace the current selection when yanking
+(delete-selection-mode t) ;; Plus it make emacs to replace the current selection when yanking
 (setq shift-select-mode t)
 
 (require 'textmate)

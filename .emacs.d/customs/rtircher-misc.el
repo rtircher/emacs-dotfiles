@@ -53,7 +53,7 @@
 (autoload 'ack-find-same-file "full-ack" nil t)
 (autoload 'ack-find-file "full-ack" nil t)
 
-(setq ispell-program-name "/usr/local/bin/aspell")
+;; (setq ispell-program-name "/usr/local/bin/aspell")
 
 ;; ;; Use markdown mode
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
@@ -71,7 +71,14 @@
 	    (ga-tab-fix)
 	    (setq tab-width 2)
 	    (setq indent-tabs-mode nil)
-            )))
+      )))
+(auto-fill-mode nil)
+(remove-hook 'text-mode-hook #'turn-on-auto-fill)
+(remove-hook 'markdown-mode-hook #'turn-on-auto-fill)
+(remove-hook 'clojure-mode-hook #'turn-on-auto-fill)
+(add-hook 'text-mode-hook 'turn-off-auto-fill)
+(add-hook 'markdown-mode-hook 'turn-off-auto-fill)
+(add-hook 'clojure-mode-hook 'turn-off-auto-fill)
 
 ;; Hippie expand config
 (setq hippie-expand-try-functions-list

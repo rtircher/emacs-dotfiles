@@ -3,6 +3,7 @@
  tab-width 2)
 
 (setq
+ auto-fill-mode          nil
  make-backup-files       nil
  inhibit-startup-message t
  linum-offset            t

@@ -34,3 +34,4 @@ retry.txt
 .emacs.d/places
 .emacs.d/swank
 .emacs.d/tramp
+*.elc
