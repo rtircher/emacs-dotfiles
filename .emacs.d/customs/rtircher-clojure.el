@@ -12,6 +12,15 @@
 
 (require 'clojure-mode)
 
+;; how to use define-clojure-indent:
+;; * `defun', meaning indent `defun'-style;
+;; * an integer N, meaning indent the first N arguments specially
+;;   like ordinary function arguments and then indent any further
+;;   arguments like a body;
+;; * a function to call just as this function was called.
+;;   If that function returns nil, that means it doesn't specify
+;;   the indentation.
+
 ;; Indent for compojure
 (define-clojure-indent
   (defroutes 'defun)
