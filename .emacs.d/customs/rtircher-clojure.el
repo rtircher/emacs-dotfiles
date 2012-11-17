@@ -2,6 +2,11 @@
           (lambda ()
             (setq inferior-lisp-program "/usr/local/bin/lein repl"))) ;; This is some crap to make it work in MacOSX since it looks like emacs doesn't find my PATH
 
+(add-hook 'nrepl-interaction-mode-hook
+  'nrepl-turn-on-eldoc-mode)
+;; Make C-c C-z switch to the *nrepl* buffer in the current window
+(add-to-list 'same-window-buffer-names "*nrepl*")
+
 (defun rtr-clojure-test-maybe-enable nil
   "Enable clojure-test-mode if the current buffer contains \"clojure.test\" package."
   (let ((ns (clojure-find-package)))
@@ -36,6 +41,7 @@
 (define-clojure-indent
   (describe 'defun)
   (it 'defun)
+  (xit 'defun)
   (context 'defun)
   (should 0)
   (should= 0)
