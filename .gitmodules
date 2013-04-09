@@ -4,3 +4,6 @@
 [submodule ".emacs.d/vendor/sass-mode"]
 	path = .emacs.d/vendor/sass-mode
 	url = git@github.com:rtircher/sass-mode.git
+[submodule ".emacs.d/vendor/jshint-mode"]
+	path = .emacs.d/vendor/jshint-mode
+	url = git@github.com:rtircher/jshint-mode.git

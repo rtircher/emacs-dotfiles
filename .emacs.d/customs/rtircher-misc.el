@@ -82,6 +82,10 @@
 (add-hook 'markdown-mode-hook 'turn-off-auto-fill)
 (add-hook 'clojure-mode-hook 'turn-off-auto-fill)
 
+;; JSHint flymake config
+(add-hook 'javascript-mode-hook
+     (lambda () (flymake-mode t)))
+
 ;; Turns on flymake for all files which have a flymake mode
 (add-hook 'find-file-hook 'flymake-find-file-hook)
 
