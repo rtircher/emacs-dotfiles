@@ -82,6 +82,9 @@
 (add-hook 'markdown-mode-hook 'turn-off-auto-fill)
 (add-hook 'clojure-mode-hook 'turn-off-auto-fill)
 
+;; Turns on flymake for all files which have a flymake mode
+(add-hook 'find-file-hook 'flymake-find-file-hook)
+
 ;; Hippie expand config
 (setq hippie-expand-try-functions-list
       '(;try-expand-list
