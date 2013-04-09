@@ -20,10 +20,12 @@
 ;; (add-to-list 'default-frame-alist '(height . 70))
 ;; (add-to-list 'default-frame-alist '(width . 200))
 
-;; Make current path available to emacs
-(setq path (shell-command-to-string "echo $PATH"))
-(setenv "PATH" path)
-(push path exec-path)
+;; Make default shell path available to emacs
+(if (not (getenv "TERM_PROGRAM"))
+      (let ((path (shell-command-to-string
+              "$SHELL -cl \"printf %s \\\"\\\$PATH\\\"\"")))
+        (setenv "PATH" path)
+        (setq exec-path (split-string path path-separator))))
 
 ;; Split window at startup
 ;; (split-window-horizontally)
