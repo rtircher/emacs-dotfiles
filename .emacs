@@ -42,6 +42,8 @@
                       rspec-mode
                       ruby-block
                       flymake-cursor
+                      flymake-sass
+                      flymake-shell
                       )
   "A list of packages to ensure are installed at launch.")
 
