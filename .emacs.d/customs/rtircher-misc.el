@@ -88,6 +88,11 @@
 
 ;; Turns on flymake for all files which have a flymake mode
 (add-hook 'find-file-hook 'flymake-find-file-hook)
+;; FlymakeCursor config
+(custom-set-variables
+     '(help-at-pt-timer-delay 0.5)
+     '(help-at-pt-display-when-idle '(flymake-overlay)))
+
 
 ;; Hippie expand config
 (setq hippie-expand-try-functions-list

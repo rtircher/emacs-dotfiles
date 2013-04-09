@@ -41,6 +41,7 @@
                       puppet-mode
                       rspec-mode
                       ruby-block
+                      flymake-cursor
                       )
   "A list of packages to ensure are installed at launch.")
 
