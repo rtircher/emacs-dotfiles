@@ -40,6 +40,11 @@ C-g: cancel region
 #### Mark ring
 C-u C-<space>: Invoke mark ring
 
+### Parenthesis navigation
+C-M-f: Move forward over a balanced expression
+C-M-b: Move backward over a balanced expression
+C-M-k: Kill balanced expression forward
+
 #### Handy navigation trick to vuew other area of buffer and come back
 - Set mark
 - navigate to wherever you want
