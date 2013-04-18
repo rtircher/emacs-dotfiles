@@ -49,6 +49,9 @@
  '(whitespace-global-mode t))
 (winner-mode 1)
 
+;; shell mode config
+(setq-default sh-basic-offset 2)
+
 ;; Ack config
 (autoload 'ack-same "full-ack" nil t)
 (autoload 'ack "full-ack" nil t)
