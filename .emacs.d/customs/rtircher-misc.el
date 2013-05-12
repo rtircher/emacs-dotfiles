@@ -86,11 +86,11 @@
 (add-hook 'clojure-mode-hook 'turn-off-auto-fill)
 
 ;; JSHint flymake config
-(add-hook 'javascript-mode-hook
+(add-hook 'js-mode-hook
      (lambda () (flymake-mode t)))
 
 ;; Turns on flymake for all files which have a flymake mode
-(add-hook 'find-file-hook 'flymake-find-file-hook)
+;; (add-hook 'find-file-hook 'flymake-find-file-hook)
 ;; FlymakeCursor config
 (custom-set-variables
      '(help-at-pt-timer-delay 0.5)
