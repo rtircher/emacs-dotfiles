@@ -7,3 +7,6 @@
 [submodule ".emacs.d/vendor/jshint-mode"]
 	path = .emacs.d/vendor/jshint-mode
 	url = git@github.com:rtircher/jshint-mode.git
+[submodule ".emacs.d/vendor/dirtree"]
+	path = .emacs.d/vendor/dirtree
+	url = git@github.com:rtircher/dirtree.git

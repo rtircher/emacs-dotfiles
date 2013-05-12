@@ -22,6 +22,10 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/jshint-mode")
 (require 'flymake-jshint)
 
+(byte-recompile-directory "~/.emacs.d/vendor/dirtree" 0)
+(add-to-list 'load-path "~/.emacs.d/vendor/dirtree")
+(autoload 'dirtree "dirtree" "Add directory to tree view" t)
+
 ;; Add in your own as you wish:
 (defvar my-packages '(starter-kit
                       starter-kit-lisp

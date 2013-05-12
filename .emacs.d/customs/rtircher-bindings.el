@@ -14,6 +14,9 @@
   ;; (global-set-key [left] 'ignore)
   ;; (global-set-key [right] 'ignore)
 
+  ;; Dirtree
+  (global-set-key "\C-o" 'dirtree)
+
   ;; Adding vim style o and O functions
   (global-set-key "\M-o" 'rtr-create-line-below)
   (global-set-key "\M-O" 'rtr-create-line-above)
