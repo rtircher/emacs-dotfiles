@@ -28,6 +28,7 @@
   (global-set-key "\C-x\M-k" 'duplicate-line)
   (global-set-key [delete] 'delete-char)
   (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
+  (global-set-key [\M-backspace] 'rtr-kill-beginning-line)
 
   (global-set-key "\C-x\C-z" 'ignore)
 

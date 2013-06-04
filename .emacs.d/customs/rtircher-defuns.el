@@ -198,5 +198,18 @@ Symbols matching the text at point are put first in the completion list."
   (interactive "p")
   (shift-text (- count)))
 
+(defun rtr-kill-beginning-line ()
+  (interactive)
+  (let ((current (point))
+        (beginning (save-excursion (beginning-of-line) (point))))
+    (if (= current beginning)
+        (let ((end-of-previous-line (save-excursion
+                                      (previous-line)
+                                      (end-of-line) (point))))
+          (delete-region current end-of-previous-line))
+        (delete-region current beginning))))
+
+
+
 (provide 'rtircher-defuns)
 ;;; rtircher-defuns.el ends here
