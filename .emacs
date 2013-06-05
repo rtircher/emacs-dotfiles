@@ -22,6 +22,8 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/jshint-mode")
 (require 'flymake-jshint)
 
+(byte-recompile-file "~/.emacs.d/vendor/dirtree/tree-mode.el" 0)
+(byte-recompile-file "~/.emacs.d/vendor/dirtree/windata.el" 0)
 (byte-recompile-directory "~/.emacs.d/vendor/dirtree" 0)
 (add-to-list 'load-path "~/.emacs.d/vendor/dirtree")
 (autoload 'dirtree "dirtree" "Add directory to tree view" t)
