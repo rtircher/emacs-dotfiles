@@ -79,12 +79,12 @@
 	    (setq indent-tabs-mode nil)
       )))
 (auto-fill-mode nil)
-(remove-hook 'text-mode-hook #'turn-on-auto-fill)
-(remove-hook 'markdown-mode-hook #'turn-on-auto-fill)
-(remove-hook 'clojure-mode-hook #'turn-on-auto-fill)
-(add-hook 'text-mode-hook 'turn-off-auto-fill)
-(add-hook 'markdown-mode-hook 'turn-off-auto-fill)
-(add-hook 'clojure-mode-hook 'turn-off-auto-fill)
+(remove-hook 'text-mode-hook 'turn-on-auto-fill)
+(remove-hook 'markdown-mode-hook 'turn-on-auto-fill)
+(remove-hook 'clojure-mode-hook 'turn-on-auto-fill)
+;; (add-hook 'text-mode-hook 'turn-off-auto-fill)
+;; (add-hook 'markdown-mode-hook 'turn-off-auto-fill)
+;; (add-hook 'clojure-mode-hook 'turn-off-auto-fill)
 
 ;; JSHint flymake config
 (add-hook 'js-mode-hook
