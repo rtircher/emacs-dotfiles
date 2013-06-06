@@ -64,16 +64,6 @@
 (byte-recompile-directory "~/.emacs.d/customs" 0)
 (add-to-list 'load-path "~/.emacs.d/customs")
 
-;; Turn on line numbers for every file visiteed
-;; (setq linum-format "%d")
-(global-linum-mode)
-
-;; Overidding some startkit stuffs
-(remove-hook 'prog-mode-hook 'esk-turn-on-hl-line-mode)
-(menu-bar-mode t)
-(delete-selection-mode t) ;; Plus it make emacs to replace the current selection when yanking
-(setq shift-select-mode t)
-
 (require 'textmate)
 
 ;; Load up customizations

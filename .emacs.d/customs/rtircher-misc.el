@@ -89,6 +89,16 @@
 ;; (add-hook 'markdown-mode-hook 'turn-off-auto-fill)
 ;; (add-hook 'clojure-mode-hook 'turn-off-auto-fill)
 
+;; Turn on line numbers for every file visiteed
+;; (setq linum-format "%d")
+(global-linum-mode)
+
+;; Overidding some startkit stuffs
+(remove-hook 'prog-mode-hook 'esk-turn-on-hl-line-mode)
+(menu-bar-mode t)
+(delete-selection-mode t) ;; Plus it make emacs to replace the current selection when yanking
+(setq shift-select-mode t)
+
 ;; JSHint flymake config
 (add-hook 'js-mode-hook
      (lambda () (flymake-mode t)))
