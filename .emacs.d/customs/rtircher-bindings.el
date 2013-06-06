@@ -9,11 +9,6 @@
 ;;;###autoload
 (progn
 
-  ;; (global-set-key [up] 'ignore)
-  ;; (global-set-key [down] 'ignore)
-  ;; (global-set-key [left] 'ignore)
-  ;; (global-set-key [right] 'ignore)
-
   ;; Dirtree
   (global-set-key "\C-o" 'dirtree)
 
