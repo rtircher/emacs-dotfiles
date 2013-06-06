@@ -30,6 +30,7 @@
   (global-set-key "\M-]" 'rtr-indent)
   (global-set-key "\M-[" 'rtr-unindent)
 
+  (global-set-key "\M-;" 'comment-dwim-line)
 
   (global-set-key [\M-\S-up] 'move-text-up)
   (global-set-key [\M-\S-down] 'move-text-down)
