@@ -59,6 +59,7 @@
 (autoload 'ack-find-file "full-ack" nil t)
 
 ;; (setq ispell-program-name "/usr/local/bin/aspell")
+(remove-hook 'text-mode-hook 'turn-on-flyspell)
 
 ;; ;; Use markdown mode
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
