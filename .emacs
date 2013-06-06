@@ -43,6 +43,8 @@
                       clojure-project-mode
                       cljdoc
                       clojurescript-mode
+                      clj-refactor
+                      cljsbuild-mode
                       python-mode
                       puppet-mode
                       rspec-mode
@@ -50,6 +52,8 @@
                       flymake-cursor
                       flymake-sass
                       flymake-shell
+                      scss-mode
+                      yaml-mode
                       )
   "A list of packages to ensure are installed at launch.")
 
