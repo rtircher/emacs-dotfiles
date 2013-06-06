@@ -66,8 +66,10 @@
 
 ;; Use ruby mode for Rakefiles
 (add-to-list 'auto-mode-alist '("[Rr]akefile\\'" . ruby-mode))
+;; Use ruby mode for Vagrantfiles
+(add-to-list 'auto-mode-alist '("[Va]agrantfile\\'" . ruby-mode))
 
-;; Use ruby mode for Rakefiles
+;; Use puppet mode for puppet files
 (add-to-list 'auto-mode-alist '("\\.pp\\'" . puppet-mode))
 
 ;; Sass mode config
@@ -78,6 +80,7 @@
 	    (setq tab-width 2)
 	    (setq indent-tabs-mode nil)
       )))
+
 (auto-fill-mode nil)
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
 (remove-hook 'markdown-mode-hook 'turn-on-auto-fill)
