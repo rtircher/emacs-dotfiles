@@ -199,9 +199,9 @@ Symbols matching the text at point are put first in the completion list."
   (shift-text (- count)))
 
 (defun rtr-kill-beginning-line ()
-  (interactive)
+  (interactive "*P")
   (let ((current (point))
-        (beginning (save-excursion (beginning-of-line) (point))))
+        (beginning (line-beginning-position)))
     (if (= current beginning)
         (let ((end-of-previous-line (save-excursion
                                       (previous-line)
