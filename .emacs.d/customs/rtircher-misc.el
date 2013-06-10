@@ -80,6 +80,8 @@
 	    (setq tab-width 2)
 	    (setq indent-tabs-mode nil)
       )))
+;; Scss mode config
+(setq scss-compile-at-save nil)
 
 (auto-fill-mode nil)
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
