@@ -111,7 +111,9 @@
 (custom-set-variables
      '(help-at-pt-timer-delay 0.5)
      '(help-at-pt-display-when-idle '(flymake-overlay)))
-
+(custom-set-faces
+ '(flymake-errline ((((class color)) (:underline "red"))))
+ '(flymake-warnline ((((class color)) (:underline "yellow")))))
 
 ;; Hippie expand config
 (setq hippie-expand-try-functions-list
