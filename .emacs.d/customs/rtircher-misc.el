@@ -69,6 +69,8 @@
 (add-to-list 'auto-mode-alist '("[Rr]ake\\'" . ruby-mode))
 ;; Use ruby mode for Vagrantfiles
 (add-to-list 'auto-mode-alist '("[Va]agrantfile\\'" . ruby-mode))
+;; Use ruby mode for prawn files
+(add-to-list 'auto-mode-alist '("\\.prawn\\'" . ruby-mode))
 
 ;; Use puppet mode for puppet files
 (add-to-list 'auto-mode-alist '("\\.pp\\'" . puppet-mode))
