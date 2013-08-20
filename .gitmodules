@@ -1,6 +1,3 @@
-[submodule ".emacs.d/vendor/haml-mode"]
-	path = .emacs.d/vendor/haml-mode
-	url = git@github.com:rtircher/haml-mode.git
 [submodule ".emacs.d/vendor/sass-mode"]
 	path = .emacs.d/vendor/sass-mode
 	url = git@github.com:rtircher/sass-mode.git
