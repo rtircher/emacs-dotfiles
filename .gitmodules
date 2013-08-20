@@ -7,3 +7,6 @@
 [submodule ".emacs.d/vendor/dirtree"]
 	path = .emacs.d/vendor/dirtree
 	url = git@github.com:rtircher/dirtree.git
+[submodule ".emacs.d/vendor/haml-mode"]
+	path = .emacs.d/vendor/haml-mode
+	url = git@github.com:rtircher/haml-mode.git
