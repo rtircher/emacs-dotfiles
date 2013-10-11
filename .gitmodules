@@ -1,12 +1,12 @@
 [submodule ".emacs.d/vendor/sass-mode"]
 	path = .emacs.d/vendor/sass-mode
-	url = git@github.com:rtircher/sass-mode.git
+	url = https://github.com/rtircher/sass-mode.git
 [submodule ".emacs.d/vendor/jshint-mode"]
 	path = .emacs.d/vendor/jshint-mode
-	url = git@github.com:rtircher/jshint-mode.git
+	url = https://github.com/rtircher/jshint-mode.git
 [submodule ".emacs.d/vendor/dirtree"]
 	path = .emacs.d/vendor/dirtree
-	url = git@github.com:rtircher/dirtree.git
+	url = https://github.com/rtircher/dirtree.git
 [submodule ".emacs.d/vendor/haml-mode"]
 	path = .emacs.d/vendor/haml-mode
-	url = git@github.com:rtircher/haml-mode.git
+	url = https://github.com/rtircher/haml-mode.git
