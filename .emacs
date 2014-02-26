@@ -72,4 +72,5 @@
 (require 'rtircher-bindings)
 (require 'rtircher-misc)
 (require 'rtircher-coffee)
+(require 'rtircher-ruby)
 (require 'rtircher-clojure)
