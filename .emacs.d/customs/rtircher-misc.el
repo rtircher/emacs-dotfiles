@@ -77,6 +77,7 @@
       )))
 ;; Scss mode config
 (setq scss-compile-at-save nil)
+(setq css-indent-offset 2)
 
 (auto-fill-mode nil)
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
