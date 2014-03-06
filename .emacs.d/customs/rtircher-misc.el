@@ -99,7 +99,11 @@
 
 ;; JSHint flymake config
 (add-hook 'js-mode-hook
-     (lambda () (flymake-mode t)))
+          (lambda ()
+            (local-unset-key "{")
+            (local-unset-key "}")
+            (flymake-mode t)))
+(remove-hook 'js-mode-hook 'esk-paredit-nonlisp)
 
 ;; Turns on flymake for all files which have a flymake mode
 ;; (add-hook 'find-file-hook 'flymake-find-file-hook)
