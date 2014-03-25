@@ -3,10 +3,11 @@
 ;; If emacs is started from the terminal then we use the default theme
 (if (not (null window-system))
     ;; Set up my preferred color theme
-    (color-theme-solarized-light)
+    (color-theme-solarized-dark)
 
   ;; Updating the color of the selected region because the default color is difficult to differentiate from the background for me
   (custom-set-faces
+   '(show-paren-match ((t (:foreground "#14323C"))))
    '(region ((t (:background "#14323C"))))))
 
 ;; Adjustments to the font lock coloring. Made manually rather than
