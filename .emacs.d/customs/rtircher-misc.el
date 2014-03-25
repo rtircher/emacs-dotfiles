@@ -58,6 +58,21 @@
 (autoload 'ack-find-same-file "full-ack" nil t)
 (autoload 'ack-find-file "full-ack" nil t)
 
+;; Rgrep config
+(custom-set-variables
+ '(grep-find-ignored-directories (quote ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "log" ".bundle" "tmp")))
+ '(help-at-pt-display-when-idle (quote (flymake-overlay)) nil (help-at-pt))
+ '(help-at-pt-timer-delay 0.5)
+ '(transient-mark-mode t)
+ '(whitespace-check-buffer-trailing nil)
+ '(whitespace-check-leading-whitespace nil)
+ '(whitespace-check-trailing-whitespace nil)
+ '(whitespace-global-mode t))
+(custom-set-faces
+ '(flymake-errline ((((class color)) (:underline "red"))))
+ '(flymake-warnline ((((class color)) (:underline "yellow")))))
+
+
 ;; (setq ispell-program-name "/usr/local/bin/aspell")
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 
