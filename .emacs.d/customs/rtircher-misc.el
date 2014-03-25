@@ -104,6 +104,8 @@
             (local-unset-key "}")
             (flymake-mode t)))
 (remove-hook 'js-mode-hook 'esk-paredit-nonlisp)
+;; Use javascript mode for js.erb files
+(add-to-list 'auto-mode-alist '("\\.js.erb\\'" . js-mode))
 
 ;; Turns on flymake for all files which have a flymake mode
 ;; (add-hook 'find-file-hook 'flymake-find-file-hook)
