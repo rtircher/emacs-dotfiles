@@ -99,6 +99,7 @@
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
 (remove-hook 'markdown-mode-hook 'turn-on-auto-fill)
 (remove-hook 'clojure-mode-hook 'turn-on-auto-fill)
+(remove-hook 'prog-mode-hook 'esk-local-comment-auto-fill)
 ;; (add-hook 'text-mode-hook 'turn-off-auto-fill)
 ;; (add-hook 'markdown-mode-hook 'turn-off-auto-fill)
 ;; (add-hook 'clojure-mode-hook 'turn-off-auto-fill)
