@@ -3,7 +3,7 @@
 ;; If emacs is started from the terminal then we use the default theme
 (if (not (null window-system))
     ;; Set up my preferred color theme
-    (color-theme-solarized-dark)
+    (color-theme-solarized-light)
 
   ;; Updating the color of the selected region because the default color is difficult to differentiate from the background for me
   (custom-set-faces
