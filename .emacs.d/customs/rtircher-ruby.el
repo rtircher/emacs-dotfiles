@@ -1,3 +1,8 @@
+(defconst ruby-keyword-end-re
+  (if (string-match "\\_>" "ruby")
+      "\\_>"
+    "\\>"))
+
 ;; Use ruby mode for Rakefiles
 (add-to-list 'auto-mode-alist '("[Rr]akefile\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("[Rr]ake\\'" . ruby-mode))
