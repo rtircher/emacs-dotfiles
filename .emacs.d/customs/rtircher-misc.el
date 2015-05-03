@@ -10,6 +10,8 @@
    '(show-paren-match ((t (:foreground "#14323C"))))
    '(region ((t (:background "#14323C"))))))
 
+(electric-indent-mode 0)
+
 ;; Adjustments to the font lock coloring. Made manually rather than
 ;; with custom as it provides more reliable control.
 (set-face-attribute 'default
