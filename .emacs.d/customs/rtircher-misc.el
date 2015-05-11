@@ -76,6 +76,8 @@
  '(flymake-warnline ((((class color)) (:underline "yellow")))))
 
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; (setq ispell-program-name "/usr/local/bin/aspell")
 (remove-hook 'text-mode-hook 'turn-on-flyspell)
 
