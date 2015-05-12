@@ -10,3 +10,6 @@
 [submodule ".emacs.d/vendor/haml-mode"]
 	path = .emacs.d/vendor/haml-mode
 	url = https://github.com/rtircher/haml-mode.git
+[submodule ".emacs.d/vendor/jade-mode"]
+	path = .emacs.d/vendor/jade-mode
+	url = https://github.com/rtircher/jade-mode.git

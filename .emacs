@@ -27,6 +27,10 @@
 (byte-recompile-directory "~/.emacs.d/vendor/dirtree" 0)
 (add-to-list 'load-path "~/.emacs.d/vendor/dirtree")
 (autoload 'dirtree "dirtree" "Add directory to tree view" t)
+(byte-recompile-directory "~/.emacs.d/vendor/jade-mode" 0)
+(add-to-list 'load-path "~/.emacs.d/vendor/jade-mode")
+(require 'jade-mode)
+
 
 ;; Add in your own as you wish:
 (defvar my-packages '(starter-kit
@@ -54,6 +58,7 @@
                       flymake-shell
                       scss-mode
                       yaml-mode
+                      sws-mode
                       )
   "A list of packages to ensure are installed at launch.")
 
