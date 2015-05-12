@@ -14,5 +14,7 @@
 (add-to-list 'auto-mode-alist '("[Gg]uardfile\\'" . ruby-mode))
 ;; Use ruby mode for prawn files
 (add-to-list 'auto-mode-alist '("\\.prawn\\'" . ruby-mode))
+;; Use ruby mode for Podfiles
+(add-to-list 'auto-mode-alist '("[Pp]odfile\\'" . ruby-mode))
 
 (provide 'rtircher-ruby)
