@@ -5,10 +5,12 @@
     ;; Set up my preferred color theme
     (color-theme-solarized-light)
 
-  ;; Updating the color of the selected region because the default color is difficult to differentiate from the background for me
   (custom-set-faces
+   ;; Updating the color of the selected region because the default color is difficult to differentiate from the background for me
    '(show-paren-match ((t (:foreground "#14323C"))))
-   '(region ((t (:background "#14323C"))))))
+   '(region ((t (:background "#14323C"))))
+   '(flymake-errline ((((class color)) (:underline "red"))))
+   '(flymake-warnline ((((class color)) (:underline "yellow"))))))
 
 (electric-indent-mode 0)
 
@@ -44,12 +46,6 @@
 
 (put 'upcase-region 'disabled nil)
 
-(custom-set-variables
- '(transient-mark-mode t)
- '(whitespace-check-leading-whitespace nil)
- '(whitespace-check-trailing-whitespace nil)
- '(whitespace-check-buffer-trailing nil)
- '(whitespace-global-mode t))
 (winner-mode 1)
 
 ;; shell mode config
@@ -61,20 +57,22 @@
 (autoload 'ack-find-same-file "full-ack" nil t)
 (autoload 'ack-find-file "full-ack" nil t)
 
-;; Rgrep config
 (custom-set-variables
- '(grep-find-ignored-directories (quote ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "log" ".bundle" "tmp")))
+ '(grep-find-ignored-directories
+   (quote
+    ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "log" ".bundle" "tmp" "coverage")))
  '(help-at-pt-display-when-idle (quote (flymake-overlay)) nil (help-at-pt))
  '(help-at-pt-timer-delay 0.5)
  '(transient-mark-mode t)
  '(whitespace-check-buffer-trailing nil)
  '(whitespace-check-leading-whitespace nil)
  '(whitespace-check-trailing-whitespace nil)
- '(whitespace-global-mode t))
-(custom-set-faces
- '(flymake-errline ((((class color)) (:underline "red"))))
- '(flymake-warnline ((((class color)) (:underline "yellow")))))
-
+ '(whitespace-global-mode t)
+ ;; Turns on flymake for all files which have a flymake mode
+ ;; (add-hook 'find-file-hook 'flymake-find-file-hook)
+ ;; FlymakeCursor config
+ '(help-at-pt-timer-delay 0.5)
+ '(help-at-pt-display-when-idle '(flymake-overlay)))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -127,16 +125,6 @@
 (remove-hook 'js-mode-hook 'esk-paredit-nonlisp)
 ;; Use javascript mode for js.erb files
 (add-to-list 'auto-mode-alist '("\\.js.erb\\'" . js-mode))
-
-;; Turns on flymake for all files which have a flymake mode
-;; (add-hook 'find-file-hook 'flymake-find-file-hook)
-;; FlymakeCursor config
-(custom-set-variables
-     '(help-at-pt-timer-delay 0.5)
-     '(help-at-pt-display-when-idle '(flymake-overlay)))
-(custom-set-faces
- '(flymake-errline ((((class color)) (:underline "red"))))
- '(flymake-warnline ((((class color)) (:underline "yellow")))))
 
 ;; Hippie expand config
 (setq hippie-expand-try-functions-list
