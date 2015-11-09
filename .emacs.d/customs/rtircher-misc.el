@@ -75,6 +75,7 @@
  '(help-at-pt-display-when-idle '(flymake-overlay)))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'before-save-hook 'gofmt-before-save)
 
 ;; (setq ispell-program-name "/usr/local/bin/aspell")
 (remove-hook 'text-mode-hook 'turn-on-flyspell)

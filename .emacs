@@ -49,6 +49,7 @@
                       clojurescript-mode
                       clj-refactor
                       cljsbuild-mode
+                      go-mode
                       python-mode
                       puppet-mode
                       rspec-mode
